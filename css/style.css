@@ -1,5 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&family=Inter:wght@400;500;700&family=Poppins&family=Roboto:wght@300;400;700&display=swap');
+
+/* Primary colours */
+:root {
+  --black: #1c1a19;
+  --orange: #ff6b00;
+  --off_white: #fff5e1;
+  --white: #fff;
+  --grey: #3c3a39;
+  --light_gray: #dbd8d7;
+  --nav_height: 45px;
+}
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+li {
+  list-style-type: none;
+}
+
+body {
+  background: var(--black);
+  color: var(--white);
+  font-family: 'Roboto', sans-serif;
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px 0 24px;
+  background: var(--grey);
+  height: 50px;
+}
+
+nav h1 {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.headline-container h1 span {
+  display: block;
+}
+
+.headline-container {
+  background: url("../assets/img/header_mobile.png") no-repeat right bottom var(--black);
+  background-size: 100px;
+  height: 540px;
+  padding: 80px 24px 0 24px;
+}
+
+.headline-container > h1 > span {
+  font-family: 'Crete Round', serif;
+  font-style: normal;
+  font-size: 50px;
+  letter-spacing: 0.37px;
+  line-height: 64px;
+  font-weight: 400;
+  color: var(--orange);
+}
+
+.headline-container h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--off_white);
+}
+
+.headline-container p {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 10px 0 20px 0;
+}
+
+.socials i {
+  margin-right: 15px;
+  color: var(--light_gray);
+  font-size: 20px;
+}
+
+.socials li {
+  display: inline;
 }
