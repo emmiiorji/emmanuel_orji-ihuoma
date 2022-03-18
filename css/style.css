@@ -19,10 +19,6 @@
   padding: 0;
 }
 
-body {
-  background: var(--black);
-}
-
 a {
   text-decoration: none;
   color: var(--white);
@@ -32,9 +28,10 @@ li {
   list-style-type: none;
 }
 
-header {
-  color: white;
-  height: 590px;
+body {
+  background: var(--black);
+  color: var(--white);
+  font-family: 'Roboto', sans-serif;
 }
 
 .toolbar {
@@ -43,13 +40,13 @@ header {
   justify-content: space-between;
   padding: 0 24px 0 24px;
   background: var(--grey);
-  font-family: 'Roboto', sans-serif;
-  height: 10%;
+  height: 50px;
 }
 
 nav h1 {
   font-size: 18px;
-  color: var(--white);
+  font-style: normal;
+  font-weight: 700;
 }
 
 .headline-container h1 span {
@@ -59,11 +56,11 @@ nav h1 {
 .headline-container {
   background: url("../assets/img/header_mobile.png") no-repeat right bottom var(--black);
   background-size: 100px;
-  height: 90%;
+  height: 540px;
   padding: 80px 24px 0 24px;
 }
 
-.headline h1 span {
+.headline-container > h1 > span {
   font-family: 'Crete Round', serif;
   font-style: normal;
   font-size: 50px;
@@ -73,8 +70,7 @@ nav h1 {
   color: var(--orange);
 }
 
-.headline h2 {
-  font-family: 'Roboto', sans-serif;
+.headline-container h2 {
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -82,7 +78,7 @@ nav h1 {
   color: var(--off_white);
 }
 
-.headline p {
+.headline-container p {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
