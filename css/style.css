@@ -19,13 +19,22 @@
   padding: 0;
 }
 
+body {
+  background: var(--black);
+}
+
 a {
   text-decoration: none;
   color: var(--white);
 }
 
+li {
+  list-style-type: none;
+}
+
 header {
   color: white;
+  height: 590px;
 }
 
 .toolbar {
@@ -35,7 +44,7 @@ header {
   padding: 0 24px 0 24px;
   background: var(--grey);
   font-family: 'Roboto', sans-serif;
-  height: var(--nav_height);
+  height: 10%;
 }
 
 nav h1 {
@@ -48,12 +57,9 @@ nav h1 {
 }
 
 .headline-container {
-  background: var(--black);
-  background-image: url("../assets/img/header_mobile.png");
-  background-position: right bottom; /* Positioning */
+  background: url("../assets/img/header_mobile.png") no-repeat right bottom var(--black);
   background-size: 100px;
-  background-repeat: no-repeat; /* Prevent showing multiple background images */
-  height: calc(100vh - var(--nav_height));
+  height: 90%;
   padding: 80px 24px 0 24px;
 }
 
