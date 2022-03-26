@@ -139,7 +139,7 @@ nav h1 {
 
 
 /* Works Section styling begins here */
-#works-section {
+.works-section {
   background: var(--white);
   color: var(--black);
   padding: 100px 24px;
@@ -148,15 +148,22 @@ nav h1 {
   font-weight: 400;
 }
 
-#works-section h1 {
+.works-section h1 {
   font-size: 40px;
   line-height: 52px;
   margin-top: 50px;
 }
 
-#works-section hr {
+.works-section hr {
   border: 1px solid #212121;
   margin-bottom: 80px;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-content: center;
 }
 
 .card {
@@ -231,3 +238,94 @@ nav h1 {
 }
 
 /* Works Section styling ends here */
+
+
+/* About me section begins here */
+.about-me {
+  padding: 120px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  background: url("../assets/img//illustration-about-me-mobile.png") no-repeat right 334px var(--black);
+}
+
+.about-me h1 {
+  font-family: 'Crete Round', serif;
+  color: var(--orange);
+  font-weight: 400;
+  font-size: 65px;
+  line-height: 88px;
+}
+
+.about-me p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.about-me li {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 43px;
+}
+
+.about-me button {
+  align-self: flex-start;
+  margin: 24px 0;
+  background: var(--orange);
+}
+
+.about-me hr {
+  width: 100%;
+  border: 1px solid var(--white);
+  margin: 160px 0 135px 0;
+}
+
+.about-me h2 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  font-style: normal;
+  font-family: 'Inter', sans-serif;
+}
+
+.title-container {
+  display: flex;
+  align-items: center;
+}
+
+.square-icon,
+.circle-icon {
+  height: 18px;
+  width: 18px;
+  background: var(--orange);
+  margin-right: 12px;
+}
+
+.circle-icon {
+  border-radius: 50%;
+}
+
+.diamond-icon {
+  width: 0;
+  height: 0;
+  border: 12px solid transparent;
+  border-bottom-color: var(--orange);
+  position: relative;
+  top: -12px;
+  margin-right: 12px;
+}
+
+.diamond-icon::after {
+  content: "";
+  position: absolute;
+  left: -12px;
+  top: 12px;
+  width: 0;
+  height: 0;
+  border: 12px solid transparent;
+  border-top-color: var(--orange);
+}
+
+/* About me section ends here */
