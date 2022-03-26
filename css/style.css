@@ -11,6 +11,7 @@
   --nav_height: 45px;
 }
 
+/* Global Styling */
 *,
 *::before,
 *::after {
@@ -34,6 +35,40 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+button {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  padding: 12px;
+  border: none;
+  cursor: pointer;
+  background: #f55800;
+  color: var(--white);
+}
+
+button:hover {
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  color: #f55800;
+}
+
+button:active {
+  /* Pressed/Clicked */
+  background: #e05304;
+  color: var(--white);
+}
+
+button:disabled {
+  color: #5b5957;
+  background: #f4f1f0;
+}
+
+/* End Global Styling */
+
+
+/* Header (Toolbar) styling begins here */
 .toolbar {
   display: flex;
   align-items: center;
@@ -49,6 +84,9 @@ nav h1 {
   font-weight: 700;
 }
 
+/* Header (Toolbar) styling ends here */
+
+/* Headline section styling begins here */
 .headline-container h1 span {
   display: block;
 }
@@ -63,7 +101,7 @@ nav h1 {
 .headline-container > h1 > span {
   font-family: 'Crete Round', serif;
   font-style: normal;
-  font-size: 50px;
+  font-size: 40px;
   letter-spacing: 0.37px;
   line-height: 64px;
   font-weight: 400;
@@ -96,3 +134,100 @@ nav h1 {
 .socials li {
   display: inline;
 }
+
+/* Headline section styling begins here */
+
+
+/* Works Section styling begins here */
+#works-section {
+  background: var(--white);
+  color: var(--black);
+  padding: 100px 24px;
+  font-family: 'Crete Round', serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+#works-section h1 {
+  font-size: 40px;
+  line-height: 52px;
+  margin-top: 50px;
+}
+
+#works-section hr {
+  border: 1px solid #212121;
+  margin-bottom: 80px;
+}
+
+.card {
+  color: #091e42;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+  align-items: flex-start;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card h2 {
+  font-size: 32px;
+  line-height: 24px;
+  margin-top: 50px;
+}
+
+.card p {
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 20px;
+}
+
+.card ul {
+  display: flex;
+}
+
+.card li {
+  border: 1px solid #8993a4;
+  background: var(--white);
+  padding: 10px 12px;
+  margin: 20px 12px 15px 0;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.card-with-bgimage {
+  background: url("../assets/img/Img-Placeholder2.png") no-repeat;
+  color: var(--white);
+}
+
+.card-with-bgimage > * {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.card-with-bgimage h2 {
+  font-family: 'Crete Round', serif;
+  font-weight: 400;
+  line-height: 44px;
+  margin-top: 84px;
+}
+
+.card-with-bgimage p {
+  margin-top: 10px;
+}
+
+.card-with-bgimage li {
+  margin-top: 2px;
+  background: rgba(255, 255, 255, 0.24);
+  border: none;
+}
+
+.card-with-bgimage button {
+  margin: 0;
+  width: 100%;
+}
+
+/* Works Section styling ends here */
