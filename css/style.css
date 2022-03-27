@@ -292,6 +292,12 @@ nav h1 {
   align-items: center;
 }
 
+.skill-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .square-icon,
 .circle-icon {
   height: 18px;
