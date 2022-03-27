@@ -299,6 +299,11 @@ nav h1 {
   flex-direction: column;
 }
 
+.frameworks,
+.technologies {
+  margin: 10px 0;
+}
+
 .square-icon,
 .circle-icon {
   height: 18px;
