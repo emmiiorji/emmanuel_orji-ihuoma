@@ -65,7 +65,8 @@ button:disabled {
   background: #f4f1f0;
 }
 
-textarea:focus, input:focus {
+textarea:focus,
+input:focus {
   outline: none;
 }
 
@@ -344,7 +345,7 @@ nav h1 {
 /* About me section ends here */
 
 /* Contact me section begins here */
-footer{
+.footer {
   background: var(--white);
   display: flex;
   align-items: center;
@@ -353,15 +354,16 @@ footer{
   font-family: 'Inter', sans-serif;
 }
 
-footer p{
+.footer p {
   text-align: center;
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
-  color: #172B4D;
+  color: #172b4d;
+  margin-bottom: 18px;
 }
 
-footer form {
+.footer form {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -369,51 +371,53 @@ footer form {
   color: var(--black);
 }
 
-footer input, footer textarea {
+.footer input,
+.footer textarea {
   border: none;
-  border-bottom: 1px solid #DBD8D7;
+  border-bottom: 1px solid #dbd8d7;
   width: 100%;
   padding: 14px 16px;
   margin-bottom: 24px;
 }
 
-footer textarea {
+.footer textarea {
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
   height: 114px;
-  background: #FBF8F7;
+  background: #fbf8f7;
 }
 
-footer textarea::placeholder {
-  color: #3C3A39;
+.footer textarea::placeholder {
+  color: #3c3a39;
   font-family: 'Inter', sans-serif;
 }
 
-footer input::placeholder {
+.footer input::placeholder {
   color: #979493;
 }
 
 #footer-divide {
-  border: 1px solid #DFE1E6;
+  border: 1px solid #dfe1e6;
   width: 100vw;
   margin-top: 124px;
 }
 
-footer ul {
+.footer ul {
   display: flex;
   align-items: center;
 }
 
-footer .socials i {
+.footer .socials i {
   margin: 25px 11.5px 23px 11.5px;
-  color: #505F79;
+  color: #505f79;
 }
 
 #footer-bottom {
   width: 50%;
-  border: 2.5px solid #0D151E;
+  border: 2.5px solid #0d151e;
   border-radius: 10px;
-  background: #0D151E;
+  background: #0d151e;
 }
+
 /* Contact me section ends here */
