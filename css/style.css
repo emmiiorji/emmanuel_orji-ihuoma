@@ -269,12 +269,12 @@ nav h1 {
   font-weight: 400;
   font-size: 18px;
   line-height: 43px;
+  text-align: center;
 }
 
 .about-me button {
   align-self: flex-start;
   margin: 24px 0;
-  background: var(--orange);
 }
 
 .about-me hr {
@@ -294,6 +294,18 @@ nav h1 {
 .title-container {
   display: flex;
   align-items: center;
+}
+
+.skill-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.frameworks,
+.technologies {
+  margin: 10px 0;
 }
 
 .square-icon,
