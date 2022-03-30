@@ -386,6 +386,7 @@ nav h1 {
   line-height: 24px;
   height: 114px;
   background: #fbf8f7;
+  border: none;
 }
 
 .footer textarea::placeholder {
