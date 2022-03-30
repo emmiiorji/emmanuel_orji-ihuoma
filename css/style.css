@@ -65,6 +65,11 @@ button:disabled {
   background: #f4f1f0;
 }
 
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
 /* End Global Styling */
 
 /* Header (Toolbar) styling begins here */
@@ -338,3 +343,82 @@ nav h1 {
 }
 
 /* About me section ends here */
+
+/* Contact me section begins here */
+.footer {
+  background: var(--white);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 24px 24px 8px 24px;
+  font-family: 'Inter', sans-serif;
+}
+
+.footer p {
+  text-align: center;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+  margin-bottom: 18px;
+}
+
+.footer form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 90%;
+  color: var(--black);
+}
+
+.footer input,
+.footer textarea {
+  border: none;
+  border-bottom: 1px solid #dbd8d7;
+  width: 100%;
+  padding: 14px 16px;
+  margin-bottom: 24px;
+}
+
+.footer textarea {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  height: 114px;
+  background: #fbf8f7;
+  border: none;
+}
+
+.footer textarea::placeholder {
+  color: #3c3a39;
+  font-family: 'Inter', sans-serif;
+}
+
+.footer input::placeholder {
+  color: #979493;
+}
+
+#footer-divide {
+  border: 1px solid #dfe1e6;
+  width: 100vw;
+  margin-top: 124px;
+}
+
+.footer ul {
+  display: flex;
+  align-items: center;
+}
+
+.footer .socials i {
+  margin: 25px 11.5px 23px 11.5px;
+  color: #505f79;
+}
+
+#footer-bottom {
+  width: 50%;
+  border: 2.5px solid #0d151e;
+  border-radius: 10px;
+  background: #0d151e;
+}
+
+/* Contact me section ends here */
