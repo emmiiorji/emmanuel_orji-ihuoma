@@ -15,19 +15,28 @@
   
   <header>
     <nav class="toolbar">
-      <a href="/">Emmanuel Orji</a>
-      <i class="fa-solid fa-bars"></i>
+      <a href="/" id="author-name">Emmanuel Orji</a>
+      <ul id="nav-menu">
+        <li>Portfolio</li>
+        <li>About</li>
+        <li>Contact</li>
+        <li><i class="fa-regular fa-envelope"></i></li>
+      </ul>
+      <i class="fa-solid fa-bars" id="hamburger"></i>
     </nav>
   </header>
 
   <section class="headline-container">
-    <h1>
-      <span>Hey There.</span>
-      <span>I'm Emmanuel</span>
-    </h1>
-    <h2>I am a Software Developer</h2>
-    <p>I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
-      don’t hestiate to contact me.</p>
+    <div class="hero">
+      <h1>
+        <span>Hey There.</span>
+        <span>I'm Emmanuel</span>
+      </h1>
+      <h2>I am a Software Developer</h2>
+      <p>I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
+        don’t hestiate to contact me.</p>
+    </div>
+    <!-- <div class="divide"></div> -->
     <ul class="socials">
       <li><a href="https://github.com/emmiiorji"><i class="fab fa-github fa-fw"></i></a></li>
       <li><a href="https://www.linkedin.com/in/emmanuel-orji-2a8317121"><i class="fa-brands fa-linkedin-in"></i></a></li>
@@ -38,8 +47,10 @@
   </section>
 
   <section class="works-section">
-    <h2>My Recent Works</h2>
-    <hr>
+    <div id="works-header">
+      <h2>My Recent Works</h2>
+      <hr>
+    </div>
     <div class="cards-container">
       <div class="card">
         <img src="./assets/img/project1-img.png" alt="Multi-Post Stories Project">
