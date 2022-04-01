@@ -36,7 +36,6 @@
       <p>I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
         don’t hestiate to contact me.</p>
     </div>
-    <!-- <div class="divide"></div> -->
     <ul class="socials">
       <li><a href="https://github.com/emmiiorji"><i class="fab fa-github fa-fw"></i></a></li>
       <li><a href="https://www.linkedin.com/in/emmanuel-orji-2a8317121"><i class="fa-brands fa-linkedin-in"></i></a></li>
@@ -53,20 +52,40 @@
     </div>
     <div class="cards-container">
       <div class="card">
-        <img src="./assets/img/project1-img.png" alt="Multi-Post Stories Project">
-        <h2>Multi-Post Stories</h2>
+        <div class="card-img">
+          <img src="./assets/img/project1-img.png" alt="Multi-Post Stories Project">
+        </div>
+        <div id="leading-card">
+          <h2>Multi-Post Stories</h2>
+          <p>
+            A daily selection of privately personalized reads; no accounts or sign-ups required. 
+            has been the industry's standard dummy text ever since the 1500s, 
+            when an unknown printer took a standard dummy text.
+          </p>
+          <ul>
+            <li>css</li>
+            <li>html</li>
+            <li>Bootstrap</li>
+            <li>Ruby</li>
+          </ul>
+          <button type="button" class="see-leading-project">
+            See Project
+          </button>
+
+        </div>
+      </div>
+      <div class="card card-with-bgimage">
+        <h2>Profesional Art Printing Data</h2>
         <p>
           A daily selection of privately personalized reads; no accounts or sign-ups required. 
-          has been the industry's standard dummy text ever since the 1500s, 
-          when an unknown printer took a standard dummy text.
+          has been the industry's standard
         </p>
         <ul>
-          <li>css</li>
           <li>html</li>
           <li>Bootstrap</li>
           <li>Ruby</li>
         </ul>
-        <button type="button">
+        <button type="button" class="see-project">
           See Project
         </button>
       </div>
@@ -81,7 +100,7 @@
           <li>Bootstrap</li>
           <li>Ruby</li>
         </ul>
-        <button type="button">
+        <button type="button" class="see-project">
           See Project
         </button>
       </div>
@@ -96,7 +115,7 @@
           <li>Bootstrap</li>
           <li>Ruby</li>
         </ul>
-        <button type="button">
+        <button type="button" class="see-project">
           See Project
         </button>
       </div>
@@ -111,7 +130,7 @@
           <li>Bootstrap</li>
           <li>Ruby</li>
         </ul>
-        <button type="button">
+        <button type="button" class="see-project">
           See Project
         </button>
       </div>
@@ -126,7 +145,7 @@
           <li>Bootstrap</li>
           <li>Ruby</li>
         </ul>
-        <button type="button">
+        <button type="button" class="see-project">
           See Project
         </button>
       </div>
@@ -141,22 +160,7 @@
           <li>Bootstrap</li>
           <li>Ruby</li>
         </ul>
-        <button type="button">
-          See Project
-        </button>
-      </div>
-      <div class="card card-with-bgimage">
-        <h2>Profesional Art Printing Data</h2>
-        <p>
-          A daily selection of privately personalized reads; no accounts or sign-ups required. 
-          has been the industry's standard
-        </p>
-        <ul>
-          <li>html</li>
-          <li>Bootstrap</li>
-          <li>Ruby</li>
-        </ul>
-        <button type="button">
+        <button type="button" class="see-project">
           See Project
         </button>
       </div>
@@ -164,7 +168,7 @@
     </div>
   </section>
 
-  <section class="about-me">
+  <section id="about-me">
     <h1>About me</h1>
     <p>
       Hello I’m a software developer! I can help you build a product , 
@@ -207,7 +211,7 @@
     </div>
   </section>
 
-  <footer class="footer">
+  <footer id="footer">
     <p>I'm always interested in hearing about new projects, 
       so if you'd like to chat please get in touch.
     </p>
