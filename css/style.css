@@ -46,12 +46,15 @@ button {
   cursor: pointer;
   background: #f55800;
   color: var(--white);
+
 }
 
 button:hover {
   background: #fff5e1;
   border: 1px solid #f55800;
   color: #f55800;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
 }
 
 button:active {
@@ -606,6 +609,8 @@ nav h1 {
 
   .card-with-bgimage:hover {
     cursor: pointer;
+    transform: scale(1.08);
+    transition-duration: 1s;
   }
 
   .card-with-bgimage:hover .shown {
