@@ -220,7 +220,7 @@ nav h1 {
 }
 
 .card-with-bgimage {
-  background: url("../assets/img/Img-Placeholder2.png") no-repeat;
+  background: url("../assets/img/Img\ Placeholder.png") no-repeat;
   background-size: cover;
   color: var(--white);
 }
@@ -250,6 +250,10 @@ nav h1 {
 .card-with-bgimage button {
   margin: 0;
   width: 100%;
+}
+
+.overlay {
+  background-image: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%);
 }
 
 /* Works Section styling ends here */
@@ -547,10 +551,6 @@ nav h1 {
     flex-direction: row;
   }
 
-  .card {
-    justify-content: flex-end;
-  }
-
   .card-with-bgimage h2 {
     margin: 0;
   }
@@ -581,23 +581,43 @@ nav h1 {
   .card-with-bgimage {
     font-size: 17px;
     line-height: 24px;
+    justify-content: flex-end;
+    position: relative;
   }
 
-  .card .see-project {
+  .hidden,
+  .see-project {
     display: none;
   }
 
-  .hide {
+  .shown {
+    align-self: flex-end;
+  }
+
+  .overlay {
+    width: 100%;
+    height: 100%;
+    align-self: flex-end;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .card-with-bgimage:hover {
+    cursor: pointer;
+  }
+
+  .card-with-bgimage:hover .shown {
     display: none;
   }
 
-  .active {
-    background: url("../assets/img/Img\ Placeholder.png") no-repeat;
-    background-size: cover;
-  }
-
-  #show {
+  .card-with-bgimage:hover .hidden {
     display: block;
+  }
+
+  .card-with-bgimage:hover .overlay {
+    display: none;
   }
 
   /* About me */
