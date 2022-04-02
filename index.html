@@ -15,19 +15,27 @@
   
   <header>
     <nav class="toolbar">
-      <a href="/">Emmanuel Orji</a>
-      <i class="fa-solid fa-bars"></i>
+      <a href="/" id="author-name">Emmanuel Orji</a>
+      <ul id="nav-menu">
+        <li>Portfolio</li>
+        <li>About</li>
+        <li>Contact</li>
+        <li><i class="fa-regular fa-envelope"></i></li>
+      </ul>
+      <i class="fa-solid fa-bars" id="hamburger"></i>
     </nav>
   </header>
 
   <section class="headline-container">
-    <h1>
-      <span>Hey There.</span>
-      <span>I'm Emmanuel</span>
-    </h1>
-    <h2>I am a Software Developer</h2>
-    <p>I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
-      don’t hestiate to contact me.</p>
+    <div class="hero">
+      <h1>
+        <span>Hey There.</span>
+        <span>I'm Emmanuel</span>
+      </h1>
+      <h2>I am a Software Developer</h2>
+      <p>I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
+        don’t hestiate to contact me.</p>
+    </div>
     <ul class="socials">
       <li><a href="https://github.com/emmiiorji"><i class="fab fa-github fa-fw"></i></a></li>
       <li><a href="https://www.linkedin.com/in/emmanuel-orji-2a8317121"><i class="fa-brands fa-linkedin-in"></i></a></li>
@@ -38,24 +46,48 @@
   </section>
 
   <section class="works-section">
-    <h2>My Recent Works</h2>
-    <hr>
+    <div id="works-header">
+      <h2>My Recent Works</h2>
+      <hr>
+    </div>
     <div class="cards-container">
       <div class="card">
-        <img src="./assets/img/project1-img.png" alt="Multi-Post Stories Project">
-        <h2>Multi-Post Stories</h2>
-        <p>
-          A daily selection of privately personalized reads; no accounts or sign-ups required. 
-          has been the industry's standard dummy text ever since the 1500s, 
-          when an unknown printer took a standard dummy text.
-        </p>
-        <ul>
-          <li>css</li>
-          <li>html</li>
-          <li>Bootstrap</li>
-          <li>Ruby</li>
-        </ul>
-        <button type="button">
+        <div class="card-img">
+          <img src="./assets/img/project1-img.png" alt="Multi-Post Stories Project">
+        </div>
+        <div id="leading-card">
+          <h2>Multi-Post Stories</h2>
+          <p>
+            A daily selection of privately personalized reads; no accounts or sign-ups required. 
+            has been the industry's standard dummy text ever since the 1500s, 
+            when an unknown printer took a standard dummy text.
+          </p>
+          <ul>
+            <li>css</li>
+            <li>html</li>
+            <li>Bootstrap</li>
+            <li>Ruby</li>
+          </ul>
+          <button type="button" class="see-leading-project">
+            See Project
+          </button>
+
+        </div>
+      </div>
+      <div class="card card-with-bgimage active">
+        <div class="hide">
+          <h2>Profesional Art Printing Data</h2>
+          <p>
+            A daily selection of privately personalized reads; no accounts or sign-ups required. 
+            has been the industry's standard
+          </p>
+          <ul>
+            <li>html</li>
+            <li>Bootstrap</li>
+            <li>Ruby</li>
+          </ul>
+        </div>
+        <button type="button" id="show" class="see-project">
           See Project
         </button>
       </div>
@@ -70,7 +102,7 @@
           <li>Bootstrap</li>
           <li>Ruby</li>
         </ul>
-        <button type="button">
+        <button type="button" class="see-project">
           See Project
         </button>
       </div>
@@ -85,7 +117,7 @@
           <li>Bootstrap</li>
           <li>Ruby</li>
         </ul>
-        <button type="button">
+        <button type="button" class="see-project">
           See Project
         </button>
       </div>
@@ -100,7 +132,7 @@
           <li>Bootstrap</li>
           <li>Ruby</li>
         </ul>
-        <button type="button">
+        <button type="button" class="see-project">
           See Project
         </button>
       </div>
@@ -115,7 +147,7 @@
           <li>Bootstrap</li>
           <li>Ruby</li>
         </ul>
-        <button type="button">
+        <button type="button" class="see-project">
           See Project
         </button>
       </div>
@@ -130,22 +162,7 @@
           <li>Bootstrap</li>
           <li>Ruby</li>
         </ul>
-        <button type="button">
-          See Project
-        </button>
-      </div>
-      <div class="card card-with-bgimage">
-        <h2>Profesional Art Printing Data</h2>
-        <p>
-          A daily selection of privately personalized reads; no accounts or sign-ups required. 
-          has been the industry's standard
-        </p>
-        <ul>
-          <li>html</li>
-          <li>Bootstrap</li>
-          <li>Ruby</li>
-        </ul>
-        <button type="button">
+        <button type="button" class="see-project">
           See Project
         </button>
       </div>
@@ -153,7 +170,7 @@
     </div>
   </section>
 
-  <section class="about-me">
+  <section id="about-me">
     <h1>About me</h1>
     <p>
       Hello I’m a software developer! I can help you build a product , 
@@ -196,7 +213,7 @@
     </div>
   </section>
 
-  <footer class="footer">
+  <footer id="footer">
     <p>I'm always interested in hearing about new projects, 
       so if you'd like to chat please get in touch.
     </p>
@@ -207,19 +224,20 @@
       <textarea name="textarea" placeholder="Enter text here" maxlength="500" required></textarea>
       <button type="submit">Get in touch</button>
 
-      <hr id="footer-divide">
+    </form>
 
+    <div class="footer-container">
+      <hr id="footer-divide">
       <ul class="socials">
         <li><a href="https://github.com/emmiiorji"><i class="fab fa-github fa-fw"></i></a></li>
         <li><a href="https://www.linkedin.com/in/emmanuel-orji-2a8317121"><i class="fa-brands fa-linkedin-in"></i></a></li>
         <li><a href="#"><i class="fa-brands fa-angellist"></i></a></li>
         <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
         <li><a href="#"><i class="fab fa-medium-m fa-fw"></i></a></li>
-      </ul>       
-
+      </ul>   
+  
       <hr id="footer-bottom">
-
-    </form>
+    </div>
   </footer>
 </body>
 </html>
