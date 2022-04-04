@@ -52,6 +52,8 @@ button:hover {
   background: #fff5e1;
   border: 1px solid #f55800;
   color: #f55800;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
 }
 
 button:active {
@@ -112,6 +114,7 @@ nav h1 {
   line-height: 64px;
   font-weight: 400;
   color: var(--orange);
+  animation: bounceIn 2s ease 2s 3;
 }
 
 .headline-container h2 {
@@ -606,6 +609,8 @@ nav h1 {
 
   .card-with-bgimage:hover {
     cursor: pointer;
+    transform: scale(1.08);
+    transition-duration: 1s;
   }
 
   .card-with-bgimage:hover .shown {
@@ -738,3 +743,17 @@ nav h1 {
 }
 
 /* Media Queries End here */
+
+/* Animation keyframes Begin here */
+
+@keyframes bounceIn {
+  0% { transform: scale(1, 1)    translateX(0); }
+  10% { transform: scale(1.1, 0.9) translateX(0); }
+  30% { transform: scale(0.9, 1.1) translateX(-100px); }
+  50% { transform: scale(1, 1)    translateX(0); }
+  57% { transform: scale(1, 1)    translateX(-7px); }
+  64% { transform: scale(1, 1)    translateX(0); }
+  100% { transform: scale(1, 1)    translateX(0); }
+}
+
+/* Animation keyframes End here */
