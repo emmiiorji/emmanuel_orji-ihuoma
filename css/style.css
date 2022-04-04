@@ -115,6 +115,7 @@ nav h1 {
   line-height: 64px;
   font-weight: 400;
   color: var(--orange);
+  animation: bounceIn 2s ease 2s 3;
 }
 
 .headline-container h2 {
@@ -489,7 +490,6 @@ nav h1 {
     font-size: 72px;
     line-height: 82px;
     color: #f55800;
-    animation: bounceIn 2s ease 2s;
   }
 
   .headline-container h2 {
