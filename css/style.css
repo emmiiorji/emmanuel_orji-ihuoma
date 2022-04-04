@@ -46,7 +46,6 @@ button {
   cursor: pointer;
   background: #f55800;
   color: var(--white);
-
 }
 
 button:hover {
@@ -745,16 +744,16 @@ nav h1 {
 
 /* Media Queries End here */
 
-
 /* Animation keyframes Begin here */
 
 @keyframes bounceIn {
-  0%   { transform: scale(1,1)    translateX(0); }
-  10%  { transform: scale(1.1,.9) translateX(0); }
-  30%  { transform: scale(.9,1.1) translateX(-100px); }
-  50%  { transform: scale(1,1)    translateX(0); }
-  57%  { transform: scale(1,1)    translateX(-7px); }
-  64%  { transform: scale(1,1)    translateX(0); }
-  100% { transform: scale(1,1)    translateX(0); }
+  0% { transform: scale(1, 1)    translateX(0); }
+  10% { transform: scale(1.1, 0.9) translateX(0); }
+  30% { transform: scale(0.9, 1.1) translateX(-100px); }
+  50% { transform: scale(1, 1)    translateX(0); }
+  57% { transform: scale(1, 1)    translateX(-7px); }
+  64% { transform: scale(1, 1)    translateX(0); }
+  100% { transform: scale(1, 1)    translateX(0); }
 }
+
 /* Animation keyframes End here */
