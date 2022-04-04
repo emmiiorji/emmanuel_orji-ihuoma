@@ -11,7 +11,7 @@
 
 <!-- ## Live Demo (if available) -->
 
-<!-- [Live Demo Link](https://livedemo.com) -->
+[Live Demo Link](https://emmiiorji.github.io/my_new_portfolio/)
 
 
 ## Getting Started
