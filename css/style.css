@@ -84,7 +84,44 @@ input:focus {
   height: var(--nav_height);
 }
 
+.toolbar .close {
+  display: none;
+  font-size: larger;
+  color: #67798E;
+}
+
+
+.show-mobile-menu {
+  background: #3C3A39;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.show-mobile-menu #mobile-menu {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  
+}
+
+.show-mobile-menu #author-name {
+  display: none;
+}
+
+.show-mobile-menu #nav-menu {
+  display: block;
+}
+
+
+
 #nav-menu {
+  display: none;
+}
+
+#nav-menu .fa-envelope {
   display: none;
 }
 
