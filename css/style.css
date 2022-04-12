@@ -88,6 +88,7 @@ input:focus {
   display: none;
   font-size: larger;
   color: #67798E;
+  margin-top: 20px;
 }
 
 
@@ -113,9 +114,15 @@ input:focus {
 
 .show-mobile-menu #nav-menu {
   display: block;
+  line-height: 64px;
+  font-size: 32px;
+  font-weight: bold;
+  margin-top: 40px;
 }
 
-
+hr {
+  width: 375px;
+}
 
 #nav-menu {
   display: none;
@@ -501,6 +508,10 @@ nav h1 {
   }
 
   .toolbar #hamburger {
+    display: none;
+  }
+
+  hr {
     display: none;
   }
 
