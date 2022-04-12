@@ -87,10 +87,17 @@ input:focus {
 .toolbar .close {
   display: none;
   font-size: larger;
-  color: #67798E;
+  color: #67798e;
   margin-top: 20px;
 }
 
+#nav-menu {
+  display: none;
+}
+
+#nav-menu .fa-envelope {
+  display: none;
+}
 
 .show-mobile-menu {
   position: fixed;
@@ -123,15 +130,7 @@ input:focus {
 
 .show-mobile-menu li {
   text-align: center;
-  border-bottom: 1px solid #6F6C6B;
-}
-
-#nav-menu {
-  display: none;
-}
-
-#nav-menu .fa-envelope {
-  display: none;
+  border-bottom: 1px solid #6f6c6b;
 }
 
 nav h1 {
