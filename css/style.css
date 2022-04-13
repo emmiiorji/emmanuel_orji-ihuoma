@@ -510,6 +510,10 @@ nav h1 {
     margin: 8%;
   }
 
+  #nav-menu .fa-envelope {
+    display: inline;
+  }
+
   .toolbar #hamburger {
     display: none;
   }
@@ -518,7 +522,7 @@ nav h1 {
     display: none;
   }
 
-  .toolbar a {
+  .toolbar #author-name {
     margin-left: 100vw;
   }
 
