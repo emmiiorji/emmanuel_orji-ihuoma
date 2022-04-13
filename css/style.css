@@ -106,6 +106,7 @@ input:focus {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  z-index: 1;
 }
 
 .show-mobile-menu #mobile-menu {
@@ -160,6 +161,7 @@ nav h1 {
   font-weight: 400;
   color: var(--orange);
   animation: bounceIn 2s ease 2s 3;
+  z-index: -1;
 }
 
 .headline-container h2 {

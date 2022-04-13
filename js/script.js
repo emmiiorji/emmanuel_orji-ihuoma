@@ -20,6 +20,4 @@ hamburger.addEventListener('click', toggleOpenMenu);
 
 closeMenu.addEventListener('click', toggleOpenMenu);
 
-menuNavs.forEach((nav) => {
-  nav.addEventListener('click', toggleOpenMenu);
-});
+menuNavs.forEach((nav) => nav.addEventListener('click', toggleOpenMenu));
