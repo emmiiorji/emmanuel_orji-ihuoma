@@ -54,25 +54,20 @@ const markupModal = (projectId) => {
           </div>`;
 };
 
-function markupAllProjects() {
-  let works = '';
-
-  for (let index = projects.length - 1; index >= 0; index -= 1) {
-    let project = '';
-    try {
-      //  Reverse projects. Most recent comes first
-      if ((index === projects.length - 1) && (projects.length > 0)) {
-        project = markupLeadingProject();
-      } else if (projects.length > 1) {
-        project = markupOtherProjects(index);
-      }
-      works += project;
-    } catch (error) {
-      //  Skip the project and do not render it
-    }
+function toggleOpenModal(e) {
+  const modalElement = document.querySelector('#my-works .project-modal');
+  if (window.getComputedStyle(modalElement).display === 'none') {
+    const projectId = e.target.id.split('_')[1] - 1;
+    modalElement.innerHTML = markupModal(projectId);
+    modalElement.style.display = 'block';
+  } else {
+    modalElement.style.display = 'none';
   }
-  //  Returns all project cards
-  return works;
+  if (window.getComputedStyle(closeMenu).display === 'none') {
+    closeMenu.style.display = 'block';
+  } else {
+    closeMenu.style.display = 'none';
+  }
 }
 
 //  The leading project is the last entered project
@@ -93,6 +88,7 @@ const markupLeadingProject = () => {
               <button type="button" class="see-leading-project" id="${projectId}">
                 See Project
               </button>
+
             </div>
           </div>`;
 };
@@ -119,6 +115,27 @@ const markupOtherProjects = (projectIndex) => {
           </div>`;
 };
 
+function markupAllProjects() {
+  let works = '';
+
+  for (let index = projects.length - 1; index >= 0; index -= 1) {
+    let project = '';
+    try {
+      //  Reverse projects. Most recent comes first
+      if ((index === projects.length - 1) && (projects.length > 0)) {
+        project = markupLeadingProject();
+      } else if (projects.length > 1) {
+        project = markupOtherProjects(index);
+      }
+      works += project;
+    } catch (error) {
+      //  Skip the project and do not render it
+    }
+  }
+  //  Returns all project cards
+  return works;
+}
+
 function renderProjects() {
   let projectsMarkup = '';
   const projectCards = markupAllProjects();
@@ -136,10 +153,20 @@ function renderProjects() {
 }
 renderProjects();
 
-
-
 hamburger.addEventListener('click', toggleOpenMenu);
-
 closeMenu.addEventListener('click', toggleOpenMenu);
-
 menuNavs.forEach((nav) => nav.addEventListener('click', toggleOpenMenu));
+
+const projectButtons = document.querySelectorAll('.works-section .card button');
+
+const modalBlock = document.querySelector('.project-modal');
+modalBlock.addEventListener('click', (e) => {
+  if (e.target.classList.contains('close')) { // From the modal close button
+    toggleOpenModal(e);
+  }
+});
+
+//  Listener for closing the modal is added in HTML
+projectButtons.forEach((button) => {
+  button.addEventListener('click', toggleOpenModal);
+});
