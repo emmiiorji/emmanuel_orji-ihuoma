@@ -349,7 +349,7 @@ nav h1 {
   font-family: 'Roboto', sans-serif;
 }
 
-.project-modal .languages * {
+.project-modal ul * {
   padding: 2.5%;
   margin: 20px 1.8% 15px 0;
 }
@@ -772,7 +772,7 @@ nav h1 {
     padding: 24px;
   }
 
-  .project-modal .languages * {
+  .project-modal ul * {
     padding: 1%;
     margin: 20px 0.8% 15px 0;
   }
