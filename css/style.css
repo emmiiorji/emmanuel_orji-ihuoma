@@ -309,7 +309,7 @@ nav h1 {
 }
 
 .project-modal {
-  /* display: none; */
+  display: none;
   width: 100vw;
   min-height: 100vh;
   position: fixed;
