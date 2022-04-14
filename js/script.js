@@ -1,3 +1,6 @@
+import projectsData from './projectsData.js';
+
+const projects = projectsData();
 const hamburger = document.getElementById('hamburger');
 const closeMenu = document.querySelector('#mobile-menu .close');
 const menuNavs = Array.from(document.querySelectorAll('.toolbar #nav-menu li'));
@@ -21,3 +24,5 @@ hamburger.addEventListener('click', toggleOpenMenu);
 closeMenu.addEventListener('click', toggleOpenMenu);
 
 menuNavs.forEach((nav) => nav.addEventListener('click', toggleOpenMenu));
+
+console.log(projects);
