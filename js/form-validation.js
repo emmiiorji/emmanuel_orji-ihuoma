@@ -56,4 +56,3 @@ const handleContactForm = (e) => {
 };
 
 contactForm.addEventListener('submit', handleContactForm);
-

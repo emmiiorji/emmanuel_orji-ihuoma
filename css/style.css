@@ -534,6 +534,7 @@ nav h1 {
   margin: 12px;
   width: 90%;
 }
+
 #footer input,
 #footer textarea {
   border: none;
@@ -596,8 +597,6 @@ nav h1 {
   border-radius: 10px;
   background: #0d151e;
 }
-
-
 
 #footer .success {
   border: 1.5px solid #94c7b0;
@@ -926,7 +925,7 @@ nav h1 {
   #footer textarea {
     width: calc(100% - 15%);
     padding: 14px 15% 14px 14px;
-    margin: 0 15px 0px 15px;
+    margin: 0 15px 0 15px;
   }
 
   #footer button {
