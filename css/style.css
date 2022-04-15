@@ -276,7 +276,8 @@ nav h1 {
 }
 
 .card-with-bgimage {
-  background: url("../assets/img/Img\ Placeholder.png") no-repeat;
+  /* background: url("../assets/img/Img\ Placeholder.png") no-repeat; */
+  /* Background added dynamically from JavaScript */
   background-size: cover;
   color: var(--white);
 }

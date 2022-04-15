@@ -150,6 +150,10 @@ function renderProjects() {
                       </div>`;
   }
   projectsSection.innerHTML = projectsMarkup;
+  document.querySelectorAll('#my-works .card-with-bgimage').forEach((card) => {
+    const projectId = Array.from(card.childNodes).filter((childNode) => childNode.nodeName === 'BUTTON')[0].id.split('_')[1] - 1;
+    card.style.background = `url("${projects[projectId].imageURL}") no-repeat`;
+  });
 }
 renderProjects();
 
