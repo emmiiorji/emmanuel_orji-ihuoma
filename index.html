@@ -99,9 +99,18 @@
     </p>
 
     <form action="https://formspree.io/f/xjvleokg" method="POST" id="contact-me">
-      <input type="text" placeholder="Full Name" maxlength="30" required>
-      <input type="email" placeholder="Email Address" required>
-      <textarea name="textarea" placeholder="Enter text here" maxlength="500" required></textarea>
+      <div class="field">
+        <input type="text" name="full_name" id="full_name" placeholder="Full Name" maxlength="30">
+        <small></small>
+      </div>
+      <div class="field">
+        <input type="email" name="email" placeholder="Email Address">
+        <small></small>
+      </div>
+      <div class="field" >
+        <textarea name="textarea" placeholder="Enter text here" maxlength="500"></textarea>
+        <small ></small>
+      </div>
       <button type="submit">Get in touch</button>
 
     </form>
@@ -120,5 +129,7 @@
     </div>
   </footer>
   <script src="./js/script.js" type="module"></script>
+  <script src="./js/form-validation.js" type="module"></script>
+  <script src="./js/utility.js" type="module"></script>
 </body>
 </html>
