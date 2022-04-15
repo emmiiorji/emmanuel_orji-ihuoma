@@ -1,4 +1,6 @@
 import projectsData from './projectsData.js';
+import populateInputFields from './utility.js';
+populateInputFields();
 
 const projects = projectsData();
 const hamburger = document.getElementById('hamburger');
