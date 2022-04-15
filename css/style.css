@@ -525,13 +525,21 @@ nav h1 {
   color: var(--black);
 }
 
+#footer form small {
+  padding: 2px 16px;
+  display: block;
+}
+
+#footer .field {
+  margin: 12px;
+  width: 90%;
+}
 #footer input,
 #footer textarea {
   border: none;
   border-bottom: 1px solid #dbd8d7;
-  width: 90%;
+  width: 100%;
   padding: 14px 16px;
-  margin: 24px;
 }
 
 #footer textarea {
@@ -546,6 +554,10 @@ nav h1 {
 #footer textarea::placeholder {
   color: #3c3a39;
   font-family: 'Inter', sans-serif;
+}
+
+#footer textarea + small {
+  margin-bottom: 10px;
 }
 
 #footer input::placeholder {
@@ -583,6 +595,16 @@ nav h1 {
   border: 2.5px solid #0d151e;
   border-radius: 10px;
   background: #0d151e;
+}
+
+
+
+#footer .success {
+  border: 1.5px solid #94c7b0;
+}
+
+#footer .error {
+  border: 1.5px solid #e67480;
 }
 
 /* Contact me section ends here */
@@ -904,7 +926,7 @@ nav h1 {
   #footer textarea {
     width: calc(100% - 15%);
     padding: 14px 15% 14px 14px;
-    margin: 0 15px 15px 15px;
+    margin: 0 15px 0px 15px;
   }
 
   #footer button {
