@@ -1,11 +1,22 @@
 const contactForm = document.getElementById('contact-me');
 
 const isEmpty = (field, message) => {
-
+  const fieldIsEmpty = field.value.trim() === '';
+  return fieldIsEmpty ? displayError(field, message) : displaySuccess(field);
 };
 
 const isValidEmail = (field, messageOnRequired, messageOnInvalid) => {
+  if (!isEmpty(field, messageOnRequired)) {
+    return false;
+  }
 
+  const email = field.value.trim();
+  const isLowerCase = email === email.toLowerCase();
+
+  if (!isLowerCase) {
+    return displayError(field, messageOnInvalid);
+  }
+  return true;
 };
 
 const handleContactForm = (e) => {
