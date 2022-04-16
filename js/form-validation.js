@@ -1,15 +1,23 @@
 const contactForm = document.getElementById('contact-me');
 
 const displayMessage = (field, message, status) => {
-  const displayElement = field.parentNode.querySelector('small');
-  displayElement.innerText = message;
+  const displayElements = Array.from(field.parentNode.parentNode.querySelectorAll('small'));
+  let elementIndex = 0;
+  for (let i = 0; i < displayElements.length; i += 1) {
+    // Display the message in the first encountered small tag
+    if (!displayElements[i].innerText) {
+      displayElements[i].innerText = message;
+      elementIndex = i;
+      break;
+    }
+  }
 
   field.classList.add(status ? 'success' : 'error');
-  displayElement.style.color = 'red';
+  displayElements[elementIndex].style.color = 'red';
   setTimeout(() => {
     field.classList.remove('error');
     field.classList.remove('success');
-    displayElement.innerText = '';
+    displayElements[elementIndex].innerText = '';
   }, 3000);
 
   return status;
