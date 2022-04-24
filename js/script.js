@@ -48,8 +48,8 @@ const markupModal = (projectId) => {
                     ${project.description}
                   </p>
                   <div class="points-of-action">
-                    <button type="button">See Live<i class="fa-solid fa-power-off"></i></button>
-                    <button type="button">See Source<i class="fa-brands fa-github"></i></button>
+                    <a href="${project.hostedURL || '#'}" target='_blank'><button type="button">See Live<i class="fa-solid fa-power-off"></i></button></a>
+                    <a href="${project.githubURL || '#'}" target='_blank'><button type="button">See Source<i class="fa-brands fa-github"></i></button></a>
                   </div>
                 </div>
               </div>
