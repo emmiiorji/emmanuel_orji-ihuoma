@@ -1,4 +1,4 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+<!-- ![](https://img.shields.io/badge/Microverse-blueviolet) -->
 
 # My Portfolio
 
@@ -52,11 +52,11 @@ Feel free to check the [issues page](../../issues/).
 
 Give a ⭐️ if you like this project!
 
-<!-- ## Acknowledgments
+## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc -->
+- Microverse
+- Coding Partners
+- Code Reviewers
 
 ## 📝 License
 

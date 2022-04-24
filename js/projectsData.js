@@ -36,9 +36,9 @@ export default () => [
     languages: ['css', 'html', 'Bootstrap', 'Ruby'],
   },
   {
-    name: 'Multi-Post Stories',
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
-    imageURL: 'https://res.cloudinary.com/emmii/image/upload/v1649836653/my_portfolio/project_screenshot_ctmepz.png',
-    languages: ['css', 'html', 'Bootstrap', 'Ruby'],
+    name: 'PM Global Workshop',
+    description: "This is a website that provides an overview of an upcoming Project Managers' global workshop. The website shows pertinent information about the workshop, including the program, speakers, sponsors, and contact information.",
+    imageURL: 'https://res.cloudinary.com/emmii/image/upload/v1650824023/my_portfolio/pm-global-home_rns1kg.jpg',
+    languages: ['HTML', 'CSS', 'Javascript'],
   },
 ];
