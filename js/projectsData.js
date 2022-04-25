@@ -53,6 +53,6 @@ export default () => [
     imageURL: 'https://res.cloudinary.com/emmii/image/upload/v1650824023/my_portfolio/pm-global-home_rns1kg.jpg',
     languages: ['HTML', 'CSS', 'Javascript'],
     hostedURL: 'https://emmiiorji.github.io/project-mgt-workshop/',
-    githubURL: 'https://github.com/emmiiorji/my_new_portfolio',
+    githubURL: 'https://github.com/emmiiorji/my_new_phttps://github.com/emmiiorji/project-mgt-workshoportfolio',
   },
 ];
