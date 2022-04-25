@@ -48,8 +48,16 @@ const markupModal = (projectId) => {
                     ${project.description}
                   </p>
                   <div class="points-of-action">
-                    <a href="${project.hostedURL || '#'}" target='_blank'><button type="button">See Live<i class="fa-solid fa-power-off"></i></button></a>
-                    <a href="${project.githubURL || '#'}" target='_blank'><button type="button">See Source<i class="fa-brands fa-github"></i></button></a>
+                    <a href="${project.hostedURL || '#'}" target='_blank'>
+                      <button type="button">
+                        See Live<i class="fa-solid fa-power-off"></i>
+                      </button>
+                    </a>
+                    <a href="${project.githubURL || '#'}" target='_blank'>
+                      <button type="button">
+                        See Source<i class="fa-brands fa-github"></i>
+                      </button>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -81,9 +89,7 @@ const markupLeadingProject = () => {
   const leadingProject = projects[projects.length - 1];
   const projectId = `project_${projects.length}`;
   return `<div class="card">
-            <div class="card-img">
-              <img src="${leadingProject.imageURL}" alt="${leadingProject.name}">
-            </div>
+            <img src="${leadingProject.imageURL}" class="card-img" alt="${leadingProject.name}">
             <div id="leading-card">
               <h2>${leadingProject.name}</h2>
               <p>${leadingProject.description}</p>
@@ -155,7 +161,7 @@ function renderProjects() {
   projectsSection.innerHTML = projectsMarkup;
   document.querySelectorAll('#my-works .card-with-bgimage').forEach((card) => {
     const projectId = Array.from(card.childNodes).filter((childNode) => childNode.nodeName === 'BUTTON')[0].id.split('_')[1] - 1;
-    card.style.background = `url("${projects[projectId].imageURL}") no-repeat`;
+    card.style.background = `url("${projects[projectId].imageURL}") no-repeat center`;
   });
 }
 renderProjects();

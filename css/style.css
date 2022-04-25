@@ -262,6 +262,7 @@ nav h1 {
   display: flex;
   width: 100%;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .card li,
@@ -709,6 +710,10 @@ nav h1 {
     padding-bottom: 100px;
   }
 
+  .card img {
+    width: 60%;
+  }
+
   .cards-container :first-child {
     grid-column: 1/-1;
     flex-direction: row;
@@ -943,7 +948,20 @@ nav h1 {
   #footer-bottom {
     display: none;
   }
-}
+
+  /* 768px < width < 1000px */
+  @media (max-width: 1000px) {
+    .card h2 {
+      font-size: 28px;
+    }
+    
+    #leading-card p {
+      font-size: 16px;
+      line-height: 25px;
+    }
+  }
+} 
+
 
 /* Media Queries End here */
 
