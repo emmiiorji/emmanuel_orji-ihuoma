@@ -67,7 +67,6 @@ const markupModal = (projectId) => {
 
 function toggleOpenModal(e) {
   const modalElement = document.querySelector('#my-works .project-modal');
-  console.log(window.getComputedStyle(modalElement));
   if (window.getComputedStyle(modalElement).display === 'none') {
     const projectId = e.target.id.split('_')[1];
     modalElement.innerHTML = markupModal(projectId);
