@@ -67,8 +67,9 @@ const markupModal = (projectId) => {
 
 function toggleOpenModal(e) {
   const modalElement = document.querySelector('#my-works .project-modal');
+  console.log(window.getComputedStyle(modalElement));
   if (window.getComputedStyle(modalElement).display === 'none') {
-    const projectId = e.target.id.split('_')[1] - 1;
+    const projectId = e.target.id.split('_')[1];
     modalElement.innerHTML = markupModal(projectId);
     modalElement.style.display = 'block';
   } else {
@@ -87,7 +88,7 @@ const markupLeadingProject = () => {
     return '';
   }
   const leadingProject = projects[projects.length - 1];
-  const projectId = `project_${projects.length}`;
+  const projectId = `project_${projects.length - 1}`;
   return `<div class="card">
             <img src="${leadingProject.imageURL}" class="card-img" alt="${leadingProject.name}">
             <div id="leading-card">
@@ -107,7 +108,7 @@ const markupOtherProjects = (projectIndex) => {
     return '';
   }
   const project = projects[projectIndex];
-  const projectId = `project_${projectIndex + 1}`;
+  const projectId = `project_${projectIndex}`;
   return `<div class="card card-with-bgimage active">
             <div class="overlay">
               <div class="shown">
@@ -127,10 +128,10 @@ const markupOtherProjects = (projectIndex) => {
 function markupAllProjects() {
   let works = '';
 
+  //  Reverse projects. Most recent comes first
   for (let index = projects.length - 1; index >= 0; index -= 1) {
     let project = '';
     try {
-      //  Reverse projects. Most recent comes first
       if ((index === projects.length - 1) && (projects.length > 0)) {
         project = markupLeadingProject();
       } else if (projects.length > 1) {
@@ -160,7 +161,7 @@ function renderProjects() {
   }
   projectsSection.innerHTML = projectsMarkup;
   document.querySelectorAll('#my-works .card-with-bgimage').forEach((card) => {
-    const projectId = Array.from(card.childNodes).filter((childNode) => childNode.nodeName === 'BUTTON')[0].id.split('_')[1] - 1;
+    const projectId = Array.from(card.childNodes).filter((childNode) => childNode.nodeName === 'BUTTON')[0].id.split('_')[1];
     card.style.background = `url("${projects[projectId].imageURL}") no-repeat center`;
   });
 }
