@@ -2,7 +2,7 @@
 
 # My Portfolio
 
-> This is my portfolio website where I get to share projects and information that depict the skills I possess.
+> This is my portfolio website where I get to share projects and information about me.
 
 
 ## Built With
