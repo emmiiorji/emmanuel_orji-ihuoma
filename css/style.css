@@ -284,11 +284,6 @@ nav h1 {
   color: var(--white);
 }
 
-.card-with-bgimage > * {
-  padding-left: 16px;
-  padding-right: 16px;
-}
-
 .card-with-bgimage h2 {
   font-family: 'Crete Round', serif;
   font-weight: 400;
@@ -297,7 +292,7 @@ nav h1 {
 }
 
 .card-with-bgimage p {
-  margin-top: 10px;
+  margin: 10px 0;
 }
 
 .card-with-bgimage li {
@@ -390,8 +385,12 @@ nav h1 {
   transform: rotate(45deg);
 }
 
-.overlay {
-  background-image: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%);
+.card-with-bgimage .overlay {
+  background: linear-gradient(179.4deg, rgba(38, 38, 38, 0) 0.81%, rgba(38, 38, 38, 0.85) 35.03%);
+}
+
+.card-with-bgimage .overlay .shown {
+  padding: 0 16px;
 }
 
 /* Works Section styling ends here */
@@ -703,11 +702,11 @@ nav h1 {
 
   .cards-container {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
     row-gap: 37px;
     column-gap: 24px;
     margin: 0 9.79%;
     padding-bottom: 100px;
+    grid-auto-rows: 1fr;
   }
 
   .card img {
@@ -720,7 +719,7 @@ nav h1 {
   }
 
   .card-with-bgimage h2 {
-    margin: 0;
+    margin: 5px 0 0 0;
   }
 
   #works-header h2 {
@@ -749,45 +748,43 @@ nav h1 {
   .card-with-bgimage {
     font-size: 17px;
     line-height: 24px;
+    justify-content: space-betweens;
+    position: relative;
+    transform: scale(1);
+    transition-duration: 1s;
+  }
+
+  .card-with-bgimage .hidden,
+  .card-with-bgimage:hover .shown {
+    visibility: hidden;
+  }
+
+  .card-with-bgimage .shown {
+    margin-bottom: -50px;
+  }
+
+  .card-with-bgimage .overlay {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
     justify-content: flex-end;
     position: relative;
   }
 
-  .hidden,
-  .see-project {
-    display: none;
-  }
-
-  .shown {
-    align-self: flex-end;
-  }
-
-  .overlay {
-    width: 100%;
-    height: 100%;
-    align-self: flex-end;
-    display: flex;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-
   .card-with-bgimage:hover {
-    cursor: pointer;
-    transform: scale(1.08);
+    transform: scale(1.02);
     transition-duration: 1s;
   }
 
-  .card-with-bgimage:hover .shown {
-    display: none;
-  }
-
   .card-with-bgimage:hover .hidden {
-    display: block;
+    visibility: initial;
   }
 
   .card-with-bgimage:hover .overlay {
-    display: none;
+    background: transparent;
+    transform: scale(1.02);
+    transition-duration: 0.5s;
   }
 
   .project-modal .project-margin {
