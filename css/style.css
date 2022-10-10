@@ -942,6 +942,12 @@ nav h1 {
     display: none;
   }
 
+  @media (max-width: 900px) {
+    .cards-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
   /* 768px < width < 1000px */
   @media (max-width: 1000px) {
     .card h2 {
