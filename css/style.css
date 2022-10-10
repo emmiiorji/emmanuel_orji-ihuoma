@@ -315,6 +315,7 @@ nav h1 {
   left: 0;
   background: rgba(0, 0, 0, 0.7);
   z-index: 1;
+  animation: modalopen 1s ease-out;
 }
 
 .project-modal .project-margin {
@@ -970,6 +971,16 @@ nav h1 {
   57% { transform: scale(1, 1)    translateX(-7px); }
   64% { transform: scale(1, 1)    translateX(0); }
   100% { transform: scale(1, 1)    translateX(0); }
+}
+
+@keyframes modalopen {
+  from {
+		opacity: 0;
+	}
+	
+	to {
+		opacity: 1;
+	}
 }
 
 /* Animation keyframes End here */
