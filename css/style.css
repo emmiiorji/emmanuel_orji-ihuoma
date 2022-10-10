@@ -262,7 +262,6 @@ nav h1 {
   display: flex;
   width: 100%;
   flex-wrap: wrap;
-  /* justify-content: space-between; */
 }
 
 .card li,
@@ -744,19 +743,18 @@ nav h1 {
   .card-with-bgimage {
     font-size: 17px;
     line-height: 24px;
-    justify-content: space-betweens;
     position: relative;
     transform: scale(1);
     transition-duration: 1s;
   }
 
+  .card-with-bgimage .shown {
+    margin-bottom: -50px;
+  }
+
   .card-with-bgimage .hidden,
   .card-with-bgimage:hover .shown {
     visibility: hidden;
-  }
-
-  .card-with-bgimage .shown {
-    margin-bottom: -50px;
   }
 
   .card-with-bgimage .overlay {
@@ -977,12 +975,12 @@ nav h1 {
 
 @keyframes modalopen {
   from {
-		opacity: 0;
-	}
-	
-	to {
-		opacity: 1;
-	}
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 /* Animation keyframes End here */
