@@ -627,10 +627,6 @@ nav h1 {
     display: none;
   }
 
-  hr {
-    display: none;
-  }
-
   .toolbar #author-name {
     margin-left: calc(9vw - 24px);
   }
