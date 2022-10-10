@@ -117,10 +117,10 @@ const markupOtherProjects = (projectIndex) => {
                 </p>
                 ${createLanguagesUlElement(project.languages)}
               </div>
-            </div>
               <button type="button" class="hidden" id="${projectId}">
                 See Project
               </button>
+            </div>
           </div>`;
 };
 
@@ -160,8 +160,8 @@ function renderProjects() {
   }
   projectsSection.innerHTML = projectsMarkup;
   document.querySelectorAll('#my-works .card-with-bgimage').forEach((card) => {
-    const projectId = Array.from(card.childNodes).filter((childNode) => childNode.nodeName === 'BUTTON')[0].id.split('_')[1];
-    card.style.background = `url("${projects[projectId].imageURL}") no-repeat center`;
+    const projectId = card.querySelector('button').id.split('_')[1];
+    card.style.background = `url("${projects[projectId].imgMobile || projects[projectId].imageURL}") no-repeat center`;
   });
 }
 renderProjects();
