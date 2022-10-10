@@ -10,7 +10,8 @@ const menuNavs = Array.from(document.querySelectorAll('.toolbar #nav-menu li'));
 const projectsSection = document.getElementById('my-works');
 
 function toggleOpenMenu() {
-  document.querySelector('header .toolbar').classList.toggle('show-mobile-menu');
+  const toolbar = document.querySelector('header .toolbar');
+  toolbar.classList.toggle('show-mobile-menu');
   if (window.getComputedStyle(hamburger).display === 'none') {
     hamburger.style.display = 'inline';
   } else {
