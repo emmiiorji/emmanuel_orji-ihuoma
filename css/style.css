@@ -859,7 +859,7 @@ nav h1 {
   }
 
   .skill-list {
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: flex-start;
     flex-direction: row;
     width: 100%;
@@ -876,7 +876,7 @@ nav h1 {
   .skill-list .frameworks,
   .skill-list .technologies {
     margin: 0;
-    margin-right: 15%;
+    margin-right: 7%;
   }
 
   .square-icon,
