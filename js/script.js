@@ -184,3 +184,9 @@ modalBlock.addEventListener('click', (e) => {
 projectButtons.forEach((button) => {
   button.addEventListener('click', toggleOpenModal);
 });
+
+// Listen to the get resume button
+const getResume = document.getElementById('get-resume');
+getResume.addEventListener('click', () => {
+  window.open('https://drive.google.com/file/d/1dikTluvofOOc_qCwNsj3aU0W5sAYJtuF/view?usp=sharing', '_blank');
+});
