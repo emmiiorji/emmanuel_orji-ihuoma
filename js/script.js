@@ -6,7 +6,6 @@ populateInputFields();
 const projects = projectsData();
 const hamburger = document.getElementById('hamburger');
 const closeMenu = document.querySelector('#mobile-menu .close');
-const menuNavs = Array.from(document.querySelectorAll('.toolbar #nav-menu li'));
 const projectsSection = document.getElementById('my-works');
 
 function toggleOpenMenu() {
@@ -14,6 +13,8 @@ function toggleOpenMenu() {
   toolbar.classList.toggle('show-mobile-menu');
   if (window.getComputedStyle(hamburger).display === 'none') {
     hamburger.style.display = 'inline';
+    const menuNavs = Array.from(document.querySelectorAll('.toolbar #nav-menu li'));
+    menuNavs.forEach((nav) => nav.addEventListener('click', toggleOpenMenu));
   } else {
     hamburger.style.display = 'none';
   }
@@ -174,7 +175,6 @@ renderProjects();
 
 hamburger.addEventListener('click', toggleOpenMenu);
 closeMenu.addEventListener('click', toggleOpenMenu);
-menuNavs.forEach((nav) => nav.addEventListener('click', toggleOpenMenu));
 
 const projectButtons = document.querySelectorAll('.works-section .card button');
 
