@@ -983,4 +983,14 @@ nav h1 {
   }
 }
 
+@keyframes modalclose {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
 /* Animation keyframes End here */

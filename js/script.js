@@ -72,6 +72,11 @@ function toggleOpenModal(e) {
     const projectId = e.target.id.split('_')[1];
     modalElement.innerHTML = markupModal(projectId);
     modalElement.style.display = 'block';
+    const projectMainContainer = document.querySelector('.project-margin');
+    modalElement.querySelector('.close').addEventListener('click', () => { modalElement.style.display = 'none'; });
+    projectMainContainer.addEventListener('click', (e) => {
+      if (e.target === projectMainContainer) modalElement.style.display = 'none';
+    });
   } else {
     modalElement.style.display = 'none';
   }
@@ -172,13 +177,6 @@ closeMenu.addEventListener('click', toggleOpenMenu);
 menuNavs.forEach((nav) => nav.addEventListener('click', toggleOpenMenu));
 
 const projectButtons = document.querySelectorAll('.works-section .card button');
-
-const modalBlock = document.querySelector('.project-modal');
-modalBlock.addEventListener('click', (e) => {
-  if (e.target.classList.contains('close')) { // From the modal close button
-    toggleOpenModal(e);
-  }
-});
 
 //  Listener for closing the modal is added in HTML
 projectButtons.forEach((button) => {
