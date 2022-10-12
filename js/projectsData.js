@@ -1,5 +1,13 @@
 export default () => [
   {
+    name: 'Todo List (Vanilla JS)',
+    description: 'This project is a list manager that will allow a user organize a list of their tasks. They can conveniently create, update and delete tasks. The application is tested using the Jest library.',
+    imageURL: 'https://res.cloudinary.com/emmii/image/upload/v1668925300/my_portfolio/todo-list_zscvc5.png',
+    languages: ['HTML', 'CSS', 'JavaScript'],
+    hostedURL: 'https://emmiiorji.github.io/todo-list/',
+    githubURL: 'https://github.com/emmiiorji/todo-list',
+  },
+  {
     name: 'Simple JavaScript Calculator',
     description: 'A simple JavaScript calculator capable of performing simple mathematical operations like addition, subtraction, division and multiplication',
     imageURL: 'https://user-images.githubusercontent.com/20554583/173040713-94b2bbf7-3b79-4243-8b53-ec7caf30e7e5.png',
