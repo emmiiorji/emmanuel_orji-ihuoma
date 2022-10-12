@@ -1,5 +1,14 @@
 export default () => [
   {
+    name: 'PM Global Workshop',
+    description: "This is a website that provides an overview of an upcoming Project Managers' global workshop. The website shows pertinent information about the workshop, including the program, speakers, sponsors, and contact information.",
+    imageURL: 'https://res.cloudinary.com/emmii/image/upload/v1650824023/my_portfolio/pm-global-home_rns1kg.jpg',
+    imgMobile: 'https://res.cloudinary.com/emmii/image/upload/v1665660297/my_portfolio/project-mgt-workshop_mobile_fo38n5.jpg',
+    languages: ['HTML', 'CSS', 'Javascript'],
+    hostedURL: 'https://emmiiorji.github.io/project-mgt-workshop/',
+    githubURL: 'https://github.com/emmiiorji/project-mgt-workshoportfolio',
+  },
+  {
     name: 'Worldwide Holidays App',
     description: "This mobile web application developed with React/Redux lets you view global holidays from one point, reading data from the Calendarific's API. The countries' data is loaded from Open Disease.",
     imageURL: 'https://res.cloudinary.com/emmii/image/upload/v1669138470/my_portfolio/holidays-app_l9pi1u.png',
