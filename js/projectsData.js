@@ -1,5 +1,13 @@
 export default () => [
   {
+    name: 'Simple JavaScript Calculator',
+    description: 'A simple JavaScript calculator capable of performing simple mathematical operations like addition, subtraction, division and multiplication',
+    imageURL: 'https://user-images.githubusercontent.com/20554583/173040713-94b2bbf7-3b79-4243-8b53-ec7caf30e7e5.png',
+    languages: ['HTML', 'CSS', 'JavaScript'],
+    hostedURL: 'https://emmiiorji.github.io/Simple-Calculator_JS/',
+    githubURL: 'https://github.com/emmiiorji/Simple-Calculator_JS',
+  },
+  {
     name: 'Todo List (React)',
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     imageURL: 'https://user-images.githubusercontent.com/20554583/172984165-c99e401a-915c-4287-b5ae-d656f7a4688f.png',
