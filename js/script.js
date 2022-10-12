@@ -81,11 +81,6 @@ function toggleOpenModal(e) {
   } else {
     modalElement.style.display = 'none';
   }
-  if (window.getComputedStyle(closeMenu).display === 'none') {
-    closeMenu.style.display = 'block';
-  } else {
-    closeMenu.style.display = 'none';
-  }
 }
 
 //  The leading project is the last entered project
