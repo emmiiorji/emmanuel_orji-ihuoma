@@ -1,5 +1,13 @@
 export default () => [
   {
+    name: 'Todo List (React)',
+    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+    imageURL: 'https://user-images.githubusercontent.com/20554583/172984165-c99e401a-915c-4287-b5ae-d656f7a4688f.png',
+    languages: ['React', 'HTML', 'CSS'],
+    hostedURL: 'https://list-my-todos.herokuapp.com/',
+    githubURL: 'https://github.com/emmiiorji/todo-list_react',
+  },
+  {
     name: 'PM Global Workshop',
     description: "This is a website that provides an overview of an upcoming Project Managers' global workshop. The website shows pertinent information about the workshop, including the program, speakers, sponsors, and contact information.",
     imageURL: 'https://res.cloudinary.com/emmii/image/upload/v1650824023/my_portfolio/pm-global-home_rns1kg.jpg',
