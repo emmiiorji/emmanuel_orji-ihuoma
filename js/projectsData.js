@@ -30,7 +30,7 @@ export default () => [
     imgMobile: 'https://res.cloudinary.com/emmii/image/upload/v1665660297/my_portfolio/project-mgt-workshop_mobile_fo38n5.jpg',
     languages: ['HTML', 'CSS', 'Javascript'],
     hostedURL: 'https://emmiiorji.github.io/project-mgt-workshop/',
-    githubURL: 'https://github.com/emmiiorji/project-mgt-workshoportfolio',
+    githubURL: 'https://github.com/emmiiorji/project-mgt-workshop',
   },
   {
     name: 'Worldwide Holidays App',
