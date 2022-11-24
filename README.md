@@ -2,7 +2,7 @@
 
 # My Portfolio
 
-> This is my portfolio website where I get to show projects and information that depict the skills I possess.
+> This is my portfolio website where I get to share projects and information about me.
 
 
 ## Built With
@@ -11,7 +11,7 @@
 
 <!-- ## Live Demo (if available) -->
 
-[Live Demo Link](https://emmiiorji.github.io/my_new_portfolio/)
+[Live Demo Link](https://emmiiorji.github.io/emmanuel_orji-ihuoma/)
 
 
 ## Getting Started
