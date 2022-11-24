@@ -60,6 +60,7 @@ const handleContactForm = (e) => {
 
   if (validName && validEmail && validNote) {
     contactForm.submit();
+    localStorage.removeItem('contactForm');
   }
 };
 
