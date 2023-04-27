@@ -20,7 +20,7 @@ export default () => [
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     imageURL: 'https://user-images.githubusercontent.com/20554583/172984165-c99e401a-915c-4287-b5ae-d656f7a4688f.png',
     languages: ['React', 'HTML', 'CSS'],
-    hostedURL: 'https://list-my-todos.herokuapp.com/',
+    hostedURL: 'https://list-my-todos.onrender.com/',
     githubURL: 'https://github.com/emmiiorji/todo-list_react',
   },
   {
@@ -37,7 +37,7 @@ export default () => [
     description: "This mobile web application developed with React/Redux lets you view global holidays from one point, reading data from the Calendarific's API. The countries' data is loaded from Open Disease.",
     imageURL: 'https://res.cloudinary.com/emmii/image/upload/v1669138470/my_portfolio/holidays-app_l9pi1u.png',
     languages: ['React', 'HTML', 'CSS'],
-    hostedURL: 'https://holidays-worldwide.herokuapp.com/',
+    hostedURL: 'https://holidays-worldwide.onrender.com',
     githubURL: 'https://github.com/emmiiorji/holidays-worldwide',
   },
   {
