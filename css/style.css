@@ -410,7 +410,7 @@ nav h1 {
   font-family: 'Crete Round', serif;
   color: var(--orange);
   font-weight: 400;
-  font-size: 65px;
+  font-size: 35px;
   line-height: 88px;
 }
 
@@ -835,7 +835,7 @@ nav h1 {
 
   #about-me h1 {
     color: #f55800;
-    font-size: 72px;
+    font-size: 45px;
     line-height: 82px;
   }
 
