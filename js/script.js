@@ -152,12 +152,12 @@ function renderProjects() {
   const projectCards = markupAllProjects();
   if (projectCards) {
     projectsMarkup = `<div id="works-header">
-                          <h2>My Recent Works</h2>
+                          <h2>Latest Masterpieces</h2>
                           <hr>
                       </div>
                       <div class="cards-container">
                         ${projectCards}
-                        <div class="project-modal"></>
+                        <div class="project-modal"></div>
                       </div>`;
   }
   projectsSection.innerHTML = projectsMarkup;
