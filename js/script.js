@@ -97,7 +97,7 @@ const markupLeadingProject = () => {
               <p>${leadingProject.description}</p>
               ${createLanguagesUlElement(leadingProject.languages)}
               <button type="button" class="see-leading-project" id="${projectId}">
-                See Project
+                Have a Peek
               </button>
 
             </div>
@@ -120,7 +120,7 @@ const markupOtherProjects = (projectIndex) => {
                 ${createLanguagesUlElement(project.languages)}
               </div>
               <button type="button" class="hidden" id="${projectId}">
-                See Project
+                Have a Peek
               </button>
             </div>
           </div>`;
