@@ -58,4 +58,13 @@ export default () => [
     hostedURL: 'https://world-math-magicians.netlify.app/',
     githubURL: 'https://github.com/emmiiorji/math-magicians-app',
   },
+  {
+    name: 'Private Investigators',
+    description: 'A Single Page App (SPA) developed with React that allows users to make simple calculations and read a random math-related quote.',
+    imageURL: 'https://res.cloudinary.com/emmii/image/upload/v1686919370/my_portfolio/Screenshot_2023-06-16_133935_x679md.png',
+    imgMobile: 'https://res.cloudinary.com/emmii/image/upload/v1686919503/my_portfolio/Screenshot_2023-06-16_134450_h518ei.png',
+    languages: ['React', 'Node.js', 'Express', 'MySQL'],
+    hostedURL: 'https://world-math-magicians.netlify.app/',
+    githubURL: 'https://github.com/emmiiorji/math-magicians-app',
+  },
 ];
