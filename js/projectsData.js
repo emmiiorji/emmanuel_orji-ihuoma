@@ -59,7 +59,7 @@ export default () => [
     githubURL: 'https://github.com/emmiiorji/math-magicians-app',
   },
   {
-    name: 'Private Investigators',
+    name: 'Learning Management System',
     description: 'This is an online learning platform for users interested in learning FOREX trading, This website is built with comprehensive courses from the basics of forex market to advanced trading strategies.',
     imageURL: 'https://res.cloudinary.com/emmii/image/upload/v1686919370/my_portfolio/Screenshot_2023-06-16_133935_x679md.png',
     imgMobile: 'https://res.cloudinary.com/emmii/image/upload/v1686919503/my_portfolio/Screenshot_2023-06-16_134450_h518ei.png',
